@@ -1,0 +1,4 @@
+"""
+The Hirst Painting Project
+"""
+
