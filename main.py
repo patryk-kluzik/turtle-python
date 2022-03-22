@@ -3,6 +3,10 @@ import turtle
 from turtle import Turtle, Screen
 from random import choice
 
+#
+# import hirst
+# from hirst import get_colours_formatted
+
 tommy = Turtle()
 
 tommy.shape("turtle")
@@ -11,12 +15,19 @@ direction = [0, 90, 180, 270]
 turtle.colormode(255)
 
 
+# get_colours_formatted()
+
 def random_colour():
     r = random.randint(0, 255)
     g = random.randint(0, 255)
     b = random.randint(0, 255)
     rgb_tuple = (r, g, b)
     return rgb_tuple
+
+
+# def colours_from_image():
+#     print(hirst.list_of_colour)
+#     return choice(hirst.list_of_colour)
 
 
 """
@@ -64,7 +75,6 @@ challenge 4 : draw a random walk
 #     tommy.seth(choice(direction))
 #     tommy.forward(40)
 
-
 """
 challenge 5: draw a spirograph
 """
@@ -77,4 +87,5 @@ challenge 5: draw a spirograph
 #     tommy.circle(100)
 #     tommy.setheading(tommy.heading() + angle_change)
 
-
+screen = Screen()
+screen.exitonclick()
