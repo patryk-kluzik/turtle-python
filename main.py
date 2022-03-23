@@ -1,11 +1,6 @@
 import random
 import turtle
 from turtle import Turtle, Screen
-from random import choice
-
-#
-# import hirst
-# from hirst import get_colours_formatted
 
 tommy = Turtle()
 
@@ -15,8 +10,6 @@ direction = [0, 90, 180, 270]
 turtle.colormode(255)
 
 
-# get_colours_formatted()
-
 def random_colour():
     r = random.randint(0, 255)
     g = random.randint(0, 255)
@@ -24,10 +17,6 @@ def random_colour():
     rgb_tuple = (r, g, b)
     return rgb_tuple
 
-
-# def colours_from_image():
-#     print(hirst.list_of_colour)
-#     return choice(hirst.list_of_colour)
 
 
 """
